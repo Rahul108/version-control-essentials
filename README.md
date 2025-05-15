@@ -11,5 +11,12 @@ mkdir <project-name, e.g: version-control-essentials>
 cd <project-name, e.g: version-control-essentials>
 git init
 ```
+The default branch would be master after initialization if `init.defaultBranch` is not configured before.
 
 3. Add a README.md file with required description of project
+
+4. Create a github repository, link this project to the remote github repository
+```
+git remote add origin <git-remote-url>
+```
+
