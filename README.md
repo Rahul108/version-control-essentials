@@ -37,4 +37,18 @@ This guide provides a concise overview of essential version control concepts usi
     ```
     You can also follow [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/#summary) as per project requirement.
 
+6.  **Add new Branch:**
+    ```
+    git branch <new branch name>
+    git checkout <new branch name>
+    ```
+
+    you can also create and checkout at the same time by
+    ```
+    git checkout -b <new branch name>
+    ```
+
+
+
+
 
