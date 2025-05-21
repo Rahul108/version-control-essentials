@@ -48,6 +48,36 @@ This guide provides a concise overview of essential version control concepts usi
     git checkout -b <new branch name>
     ```
 
+6.  **Add a Workflow:**
+    GitHub Actions allows you to automate tasks such as running tests, building your project, or deploying code by defining workflows in your repository.
+
+    * Create a workflow file in .github/workflows/ directory of your repository, e.g., .github/workflows/main.yml.
+
+    * Define triggers (like push or pull_request) and specify jobs and steps inside the workflow YAML file.
+
+    * use official actions (e.g., actions/checkout) or custom shell commands to perform tasks.
+
+    For example, to create a workflow that runs on every push to the main branch, your workflow file might look like this:
+    ```
+        name: Example Workflow
+
+        on:
+        push:
+            branches:
+            - main
+
+        jobs:
+        example-job:
+            runs-on: ubuntu-latest
+            steps:
+            - uses: actions/checkout@v4
+            - run: echo "Hello, world!"
+
+    ```
+
+    Once committed and pushed, the workflow will run automatically based on the trigger.
+
+    For more details and quickstart guides, see the official documentation: [GitHub Actions Quickstart](https://docs.github.com/en/actions/writing-workflows/quickstart)
 
 
 
