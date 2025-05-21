@@ -17,4 +17,5 @@ jobs:
         run: |
           echo "=== Content of hello.txt ==="
           cat hello.txt
+          echo ""
           echo "============================"
